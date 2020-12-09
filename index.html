@@ -1,0 +1,687 @@
+<style>
+.sf, .object, table {
+	display: none;
+}
+body {
+	background: url("http://imgur.com/4jd7Llc.jpg") top fixed;
+	z-index: -99999;
+}
+.bar {
+	top: 55px;
+	left: 0px;
+	width: 100%;
+	height: 60px;
+	background-color: #bb171b;
+	z-index: 1;
+}
+.title {
+	background: none;
+	top: 50px;
+	left: 20px;
+	color: #35373b;
+	padding: 0px;
+	margin: 0px;
+	font: 50px rage;
+	text-transform: lowercase;
+	text-decoration: none;
+	text-align: left;
+	z-index: 5;
+}
+.sub {
+	background: none;
+	top: 90px;
+	left: 180px;
+	color: #cccbcb;
+	padding: 0px;
+	margin: 0px;
+	font: 20px century gothic;
+	text-transform: lowercase;
+	text-decoration: none;
+	text-align: left;
+	z-index: 5;
+}
+.navi {
+	top: 100px;
+	left: 50px;
+	z-index: 3;
+	width: 100px;
+}
+.navi a {
+	padding: 3px;
+	padding-left: 15px;
+	margin: 0px;
+	margin-top: 10px;
+	display: block;
+	background: #35373b;
+	color: #cccbcb;
+	font: 15px century gothic;
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: 3px;
+	border-right: 10px solid #35373b;
+}
+.navi a:hover {
+	border: none;
+}
+.bri {
+	top: 130px;
+	left: 190px;
+	width: 330px;
+	height: auto;
+	background-color: #cccbcb;
+	z-index: 2;
+}
+.bri h1 {
+	color: #bb171b;
+	font: 20px century gothic;
+	text-decoration: none;
+	text-align: left;
+	border-left: 100px solid #bb171b;
+	line-height: 12px;
+	letter-spacing: -2px;
+	margin-right: 50px;
+	padding-left: 5px;
+}
+.bri p {
+	background: none;
+	margin: 0px;
+	padding: 5px 20px 5px 20px;
+	color: #000000;
+	font: 12px arial;
+	text-align: center;
+}
+.bri a {
+	text-decoration: none;
+	color: #bb171b;
+	text-transform: uppercase;
+}
+.bri b, .bri i {
+	color: #35373b;
+}
+a:hover {
+	cursor: help;
+}
+img.left {
+	float: left;
+	margin: 5px;
+}
+img.right {
+	float: right;
+	margin: 5px;
+}
+.addon {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: url("http://imageshack.com/a/img908/1813/DQz0dF.gif");
+}
+.wrapper {
+	background: #35373b;
+	width: 330px;
+	height: 220px;
+	overflow: hidden;
+}
+.scrolling {
+	background: #35373b;
+	width: 360px;
+	height: 220px;
+	overflow: auto;
+}
+.wrapperu {
+	background: #35373b;
+	width: 330px;
+	height: 75px;
+	overflow: hidden;
+}
+.scrollingu {
+	background: #35373b;
+	width: 360px;
+	height: 75px;
+	overflow: auto;
+}
+.content {
+	width: 330px;
+}
+.contentt {
+	width: 330px;
+}
+.contents {
+	width: 330px;
+}
+.content p {
+	background: none;
+	margin: 0px;
+	padding: 20px;
+	color: #fff;
+	font: 12px arial;
+	text-align: center;
+}
+.content a {
+	text-decoration: none;
+	color: #cccbcb;
+	text-transform: uppercase;
+}
+.content b, .content i {
+	color: #cccbcb;
+}
+.contentt p {
+	background: none;
+	margin: 0px;
+	padding: 20px;
+	color: #fff;
+	font: 12px courier;
+	text-align: left;
+}
+.contentt b {
+	text-decoration: none;
+	color: #ec1211;
+	font: bold 12px courier;
+}
+.contentt i {
+	color: #fff;
+}
+.contentt a {
+	text-decoration: none;
+	color: #cccbcb;
+	text-transform: uppercase;
+}
+.contents p {
+	background: none;
+	margin: 0px;
+	padding: 20px;
+	color: #fff;
+	font: 12px arial;
+	text-align: center;
+}
+.contents a {
+	text-decoration: none;
+	color: #C5B358;
+	text-transform: uppercase;
+}
+div {
+	display: block;
+}
+h2 {
+	font: bold 15px century gothic;
+	letter-spacing: 5px;
+	text-transform: lowercase;
+	padding-left: 20px;
+	color: #bb171b;
+}
+h2 b {
+	font: 15px century gothic;
+	letter-spacing: 5px;
+	text-transform: lowercase;
+	color: #35373b;
+}
+.container {
+	margin: 10px auto;
+	width: 330px;
+}
+.container .box {
+	text-align: center;
+	float: left;
+	width: 48.8%;
+}
+.boxx {
+	text-align: center;
+	float: left;
+	width: 18.8%;
+}
+.boxx h2 {
+	font: 13px century gothic;
+	text-align: center;
+	text-transform: lowercase;
+	color: #35373b;
+}
+.boxxt {
+	text-align: center;
+	float: left;
+	width: -blocked-;
+}
+textarea {
+	width: 88px;
+	height: 31px;
+	font: italic 8pt courier;
+	letter-spacing: 2px;
+	color: #35373b;
+	line-height: 0.6em;
+	overflow: hidden;
+	background: #35373b;
+	border-left: 5px double #cccbcb;
+	border-right: 5px double #cccbcb;
+	border-top: none;
+	border-bottom: none;
+}
+textarea:hover {
+	font: italic 8pt courier;
+	letter-spacing: -1px;
+	line-height: 0.3em;
+	color: #cccbcb;
+}
+.button {
+	display: inline-block;
+	vertical-align: top;
+	margin: 4px;
+}
+.button textarea {
+	width: 88px;
+	height: 18px;
+	margin-top: 3px;
+}
+</style><a name="home"></a><div class="addon" style="position: fixed;"></div><div class="bar" style="position: absolute;">
+</div>
+<div class="navi" style="position: fixed;">
+<a href="#home">home</a>
+<a href="#basics">basics</a>
+<a href="#world">world</a>
+<a href="#stories">stories</a>
+<a href="#pet">pet</a>
+<a href="#inspo">inspo</a>
+<a href="#about">about</a>
+<a href="#why">why</a>
+<a href="#sofar">so far</a>
+<a href="#conclusion">closure</a>
+<a href="#art">gallery</a>
+<a href="#sitely">sitely</a>
+</div>
+<div class="title" style="position: fixed;">
+Flust Grey
+</div>
+<div class="sub" style="position: absolute;">
+~ a UC Grey Gelert Project Page ~
+</div>
+<div class="bri" style="position: absolute;">
+<h2>DISCLAIMERS: <b>cults, death, </b></h2>
+<p><b>TO TNT & POTENTIAL FOSTERS:</b> I've made this page out of my own free will simply because I wanted to work on this character and to use it as an application in case I find a pet UFA that matches what I'm looking for.</p>
+<p><i>Please keep in mind English is <b>not</b> my first language, so if you find anything wrong please <a href="/neomessages.phtml?type=send&recipient=sterneflugel">NM</a> me so I can correct it.</i></p><br><center><img src="http://i4.glitter-graphics.org/pub/2497/2497564avzq9uy90s.gif" style="width: 290px;"></center><br><p>Hello and welcome to my project page! My name is <a href="/~abyss_citadel">Abyss</a> and I've been on neopets since 2009, if you want to see more about my plans keep on reading, if you are interested in my other pets you can see my character directory <a href="/~_suco_">here</a>.<br><br></p><center><p><i>(scroll down inside the box to keep reading)</i></p></center><br><div class="wrapperu">
+    <div class="scrollingu">
+        <div class="content">
+<h2>updates</h2>
+<p></p>
+<p><b>25 Sep 2020</b> started the page, added intro, moodboard and basic stats;<br><b>26 Sep 2020</b> lost the code because of a special character - starting over, added navigation, dividers, world and about me;</p>
+<p><b>27 Sep 2020</b> added personality chart, likes and dislikes, disclaimers, keywords, customization and story;<br><b>28 Sep 2020</b> changed font size to be bigger, added plans, hopes and trading / app tracking;</p>
+<p><b>29 Sep 2020</b> updated disclaimers and about me section, added welcome section and updates;<br><b>30 Sep 2020</b> added friends and suspects section, updated basic stats;<br></p>
+<p><b>26 Oct 2020</b> updated why me, inspirations, account and chains, listed at <a href="/~Vaowls">uc project page</a>;<br><b>27 Oct 2020</b> listed at <a href="/~Eggso">uc dream directory</a>;</p>
+<p><b>28 Oct 2020</b> added quilt patch, adopted section and playlist, updated why me and the conclusion;<br><b>29 Oct 2020</b> listed at <a href="/~Moonscope">moonscope</a> and new art by me;</p>
+<p><b>30 Oct 2020</b> added transparent images to the likes and dislikes thank you <a href="/userlookup.phtml?user=piratetwins_1994">britt</a> and new art by <a href="/userlookup.phtml?user=shellshocks">shellshocks</a>, <a href="/userlookup.phtml?user=leo_lion2">leo_lion2</a> and <a href="/userlookup.phtml?user=alli_draggy">alli_draggy</a>;<br><b>31 Oct 2020</b> added art by <a href="/userlookup.phtml?user=_hannah123445_">_hannah123445_</a>;</p>
+<p><b>01 Oct 2020</b> added new art by me, petpet and petpetpet, a new human reference, 1 new button and 1 new quilt patch and finished his petlookup;<br><b>02 Oct 2020</b> added button by <a href="/~estarina">xlorally</a>, fixed both quilt patches, listed at <a href="/~sonhai">project sonhar</a> and <a href="/~Raaynebow">rainbow requests</a>;</p>
+<p><b>03 Oct 2020</b> added Machi's patch;<br><b>04 Oct 2020</b> added new button by <a href="/~Alixsandria">miist</a>;</p>
+<p><b>11 Nov 2020</b> listed at <a href="/~Respects">project page directory</a>, updated the first chain since I trade Ohgs for a <a href="/petlookup.phtml?pet=Desthiel">permie</a>;<br><b>12 Nov 2020</b> updated the image of the snowbunny and the cooty, added the new version of the adoptables + 10 new colors;</p>
+<p><b>14 Nov 2020</b> added new siggy by <a href="/~ktyn">amelia's fonts</a>;<br><b>17 Nov 2020</b> added Direcore's patch as a placeholder;</p>
+<p><b>18 Nov 2020</b> added a new trading chain;</p>
+
+</div></div></div><br><center><img src="http://i6.glitter-graphics.org/pub/263/263236faigonjw8e.gif" style="width: 290px;"></center>
+<p>
+After a few mysterious disappearances on Terror Mountain, Detective Grey is assigned to the case, but will his feelings get in the way of the investigation? Or is his involvement in the case a lot deeper than it seems? No one knows what the webs of fate will weave for this quiet and cryptic man.
+</p>
+<center><img src="http://cur.glitter-graphics.net/pub/3240/3240789c8a8lepro1.gif"><br><br><img src="http://i.imgur.com/OcgXFDh.png" style="width: 280px;"><br><br><img src="http://orig14.deviantart.net/239f/f/2015/267/1/2/f2u_pixel_music_note_divider__black__by_distorteddevil-d8dwlsp.gif"><h2><b>playlist</b></h2>
+<p>♪ <b>GIN WIGMORE</b> - Nothing to No One<br>
+♪ <b>MEG MYERS</b> - Desire<br>
+♪ <b>SELAH SUE</b> - Stand Back<br>
+♪ <b>GIN WIGMORE</b> - 24<br>
+♪ <b>MEG MYERS</b> - Motel<br>
+♪ <b>LAURA WELSH</b> - Still Life<br>
+♪ <b>GIN WIGMORE</b> - Black Parade<br>
+♪ <b>KWABS</b> - Forgiven<br>
+♪ <b>AWOLNATION</b> - Drinking Lightning<br>
+♪ <b>RUELLE</b> - Big Guns<br>
+♪ <b>ANYA MARINA</b> - Heart Stops<br>
+♪ <b>HALSEY</b> - Control</p>
+<img src="http://cur.glitter-graphics.net/pub/3240/3240789c8a8lepro1.gif"><h2><b>Keywords</b></h2>
+<p class="note">enigmatic, cryptic, obscure, occult, secret, confidential, cipher, enigma, mystery, crime, case, snow, blizzard, snowfall, winter, cold, frost</p>
+
+</center>
+<a name="basics"></a>
+<h1>the basics...</h1>
+<p>
+<img src="http://i.imgur.com/Gpl9tDd.png" class="right"><b>Name:</b> Felix 'Flust' Grey<br><b>Species:</b> Human<br><b>Age:</b> 35<br><b>Birthday:</b> December 31<br><b>Gender:</b> Male<br><b>Pronouns:</b> He/him<br><b>Height:</b> 1,75 cm / 5'7" ft<br><b>Weight:</b> 120 pounds<br><b>Eye Color:</b> Redwood<br><b>Hair Color:</b> Crow Black</p>
+<p><b>Voice:</b> husky but flat and with no emotion<br><b>Zodiac:</b> Capricorn<br><b>Occupation:</b> Private Detective<br><b>Fears:</b> never getting his memories back / losing more of them, death and the occult<br><b>Hopes:</b> regain his memories, solve the case and have a normal life</p>
+<center><img src="http://i.imgur.com/kAFO6wV.png" style="width: 300px;"></center>
+<center><img src="http://cur.glitter-graphics.net/pub/3240/3240789c8a8lepro1.gif"></center>
+<p>After a mysteriously occurring accident during a serial case, Felix lost most of his memories, being thrown in a job he doesn't remember how to do and with the daunting task of reading a gigantic backlog of what he believes to be his own journals, he has become a very silent and reserved man, it's not that he doesn't want to show other emotions, it's mostly that he can't quite remember what he was like to begin with.<br>
+With his depressed face and mood being the result of such weird amnesic episode, he tried to not force too many emotions out, with only small, almost sarcastic looking smiles signifying his happiness, and scrunched brows that severely wrinkles his forehead to show anger and disapproval of a topic.</p>
+<center><img src="http://cur.glitter-graphics.net/pub/3240/3240789c8a8lepro1.gif"><br><br><img src="http://i.imgur.com/AfHwnRS.png" style="width: 300;"><br><br><img src="http://cur.glitter-graphics.net/pub/3240/3240789c8a8lepro1.gif"></center>
+<div class="container">
+  <div class="box"><img src="http://i.ibb.co/SBvGqtC/imageedit-14-9741901365.gif" style="width: 120px;"><p>✔  reading<br>
+✔  old records<br>
+✔  journaling<br>
+✔  winter<br></p>
+</div>
+  <div class="box"><img src="http://i.ibb.co/TgCnTBv/imageedit-8-7604507068.png" style="width: 120px;"><p>✗ talking<br>
+✗ crowds<br>
+✗ "red<br>
+✗ heat<br></p>
+</div>
+</div>
+<center><img src="http://cur.glitter-graphics.net/pub/3240/3240789c8a8lepro1.gif"></center>
+<h2><b>friends</b></h2>
+<p><img src="http://pets.neopets.com/cp/stl4mm78/1/6.png" style="width: 120px;" class="left"><br><b>Munar</b><br>
+Owner of the <i>Snowy Rest Inn</i>, one of the first people Felix meet when moving in, seems like a nice man but is clearly hiding something deeper. Was also the one who present the cult to Felix.</p>
+<p><img src="http://pets.neopets.com/cp/grkclh8v/1/6.png" style="width: 120px;" class="right"><b>Charles Richart</b><br>
+The <i>Chef of Police</i> and also the man who suggested Felix move to Terror Mountain as a former family friend. Even if he can't remember who Charles was or what he did for his family, he's still eternally grateful for his help moving away from the city.</p>
+<p><img src="http://pets.neopets.com/cp/lkqzogkg/1/6.png" style="width: 120px;" class="left"><br><b>Veronica Moore</b><br>
+Daughter of a very rich business man, loves to travel around the world and flaunt her beauty and wealth, seems to have taken a weird interest in Felix.</p>
+<center><img src="http://cur.glitter-graphics.net/pub/3240/3240789c8a8lepro1.gif"></center>
+<h2><b>suspects</b></h2>
+<p><img src="http://pets.neopets.com/cpn/mr_kor/1/6.png" style="width: 120px;" class="left"><br><b>Blaxton Kor</b><br>
+Number one suspect for the ongoing investigation. A weirdly recluse man who lives far into the forest in an intricate Victorian styled mansion.</p><br><p><img src="http://pets.neopets.com/cpn/_suco_/1/6.png" style="width: 120px;" class="right"><b>Suco Qorkreixt</b><br>
+Suspect number two for the investigation, a weird green-eyed scientist who started living in one of the most remote cabins not long before the incidents began. Seemed to know quite a bit about the cult as well.</p>
+<a name="world"></a>
+<h1>the world...</h1>
+
+<p>In this alternate universe, Terror Mountain is a small resort town in the 1930s, contrary to the more popular beach and island destinations of that decade, this beautiful snowy wonderland offered a cool and cozy atmosphere all year long, gaining a lot of traction when summer skiing became a big craze with the youth. But not all is as sweet as the cakes and tea cups served at the Inn, during the summer of 1934 a series of mysterious disappearances began, the first was a teen named Betty, last seen window browsing around the small shopping area; the next was a young adult named Joseph, last seen around the lakeside area of the resort, seemingly trying to fish; and the last disappearance that year was a second teen named Carol, who was reportedly seen sneaking out of her cabin to meet an unknown person before entering an Adler Trumpf modeled convertible car.</p>
+<center><img src="http://cur.glitter-graphics.net/pub/3240/3240789c8a8lepro1.gif"></center>
+<p>After these disappearances and the presence of this mysterious man that sported quite a new model of convertible car, Mayor Ambrewster decided to have a "secret" meeting with the Chef of Police, Charles Richart, both men discussed what could be done behind closed doors as to not alert the unsuspecting tourists while the news hadn't spread yet, their conclusion was that the police force wouldn't be able to act on the matter as it would call too much attention to the investigation,<i>but what about that gumshoe?</i>, Chief Richart asked in an intrigued tone, Felix Grey, the weird man who had moved to town the year prior,<i>well... he is a flatfoot from the apple southwest of here, right?</i>, Ambrewster questioned, while Charles only nodded. What a perfect idea, they could simply use the excuse that one of the victims family had hired him if anyone questioned their affairs while the investigation happened under the table.</p>
+<center><img src="http://cur.glitter-graphics.net/pub/3240/3240789c8a8lepro1.gif"></center>
+<p>While during the day the resort looked pristine and beautiful, almost like stepping inside a movie set, at night it almost seemed like walking right into a nightmare, the people that lived in that picture perfect town were no different, and Grey learned that very quickly. Munar, the pudgy man who ran the Snowy Rest inn, a big mitteldeutsches style building that had quite a few rooms that were always occupied by the tourists, as nice and good spirited as he seemed, Felixs first impression of this man wasn't of the best, his shady business practices of raising prices to unsuspecting customers was actually not only his, many of the business around town did this sort of trickery for a pretty penny, an even better example of that sort of thing where the two siblings that ran the small Igloo shaped shop, Mika and Carassa, inside the Ice Cavers - a very popular attraction,  the two little pests would incessantly nag the costumers around until they got angry and went away or bought something to make the them stop. Somehow, even with this sort of matter being quite well known amongst the tourists, business was still always blooming in this eccentric little town.</p>
+<center><img src="http://cur.glitter-graphics.net/pub/3240/3240789c8a8lepro1.gif"></center>
+<p>Not much is known about the weird cult-ish behavior of the long time residents, it doesn't seem to interfere with the business at least, but they sure act weird. Every Sunday night, at around 11:30 PM, most - if not all, of the locals gather at top of the mountain and chant weird things together while lighting candles. No one from the outside seems to know about any of this, but they do believe that this town is the chosen it to receive the "divine intervention", as they call, meaning they, and only they, will be spared from the impeding doom that is right around the corner. To receive this "blessing" the people involved in the cult dedicated their lives to the "grand master", an unknown man that no one seems to know - most likely the resorts owner -, this meant "ascending" to the heavens and "abandoning their physical form" to be guided into the "next level". Most of the names used around town were not actually real, they are chosen by each member themselves to signify "leaving" their older selves behind and entering a "new form" that will be ascended.</p>
+<a name="stories"></a>
+<h1>the stories...</h1>
+<center><p><i>(scroll down inside the box to keep reading)</i></p></center><br><div class="wrapper">
+    <div class="scrolling">
+        <div class="contents">
+<a name="0"></a>
+            <p>Before Grey, laid out a neat stack of diary-like books that he had no recollection of, all of them had a cover made out of a black material that seemed like a type of thin leather, with nothing written on the front or back, but while anaIysing the spine, a small and golden roman numeral could be seen on all of them...</p> 
+<p><a href="#1">I</a> <a href="#2">II</a> <a href="#3">III</a> <a href="#4">IV</a> <a href="#5">V</a> <a href="#6">VI</a></p>
+        </div>
+    </div>
+    <div class="scrolling">
+        <div class="contentt">
+<a name="1"></a>
+            <p><b>January 1st, 1915</b><br>
+Yesterday father gave me this old Oliver #5 typewriter for my 15th birthday, it does not seem to be in bad condition for the amount of use it must have seen at the journal with my father, but I'm happy to be able to use it.<br>
+I know how much our family has been struggling to earn any money, maybe now I can try and start writing to sell some books. I do not know how to create a proper story, but as long as we can feed ourselves that is enough.<br>
+I might as well use this to machine to pour my bottled feelings out, so I mark this as the begging of a diary.</p>
+<p><b>February 20th, 1915</b><br>
+For the past month I've been constantly writing a book, I haven't told neither father nor mother about it, they would call it insanity. Father has been working twice as hard as before, he has been able to make a bit more money from it, but none of us know how long this will last...<br>
+Is it too much to ask for a normal life like the other boys in my class? They have to much money to throw away, such disgraces of society...</p>
+<p><b>February 26th, 1915</b><br>
+Went to the city today, my fathers boss at the journal agreed to publish my story in a small section, if other enjoy it I  can keep writing. As compensation he gave me quite a bit of money, and mother was surprised to see it.<br>
+Lying to her feels horrible, but I can't tell them quite yet...</p>
+
+<p><b>March 2th, 1915</b><br>
+Yesterday they published my story on the paper, people seemed to be interested in the murder mystery genera, the boys at school were all commenting about how interesting it must be to become a detective... I do wonder sometimes...<br>
+I was told to keep on writing this story, to keep on faking being this super secret detective that is trying to tell his story, but that is not what I care about, I'm only in it for the money.</p>
+
+<center><p><a href="#0">back</a> <a href="#0">start</a> <a href="#2">next</a></p><br></center>
+        </div>
+    </div>
+ <div class="scrolling">
+        <div class="contentt">
+<a name="2"></a>
+            <p>text goes here</p>
+
+<center><p><a href="#1">back</a> <a href="#0">start</a> <a href="#3">next</a></p><br></center>
+</div>
+</div>
+ <div class="scrolling">
+        <div class="contentt">
+<a name="3"></a>
+            <p>text goes here</p>
+
+<center><p><a href="#2">back</a> <a href="#0">start</a> <a href="#4">next</a></p><br></center>
+</div>
+</div>
+ <div class="scrolling">
+        <div class="contentt">
+<a name="4"></a>
+            <p><b>March 22th, 1918</b><br>
+A man approached me today, he said he knew, he knew everything, that I was lying about who I was in the paper, at first I was shocked, but then again, I didn't think such a foolish little story would trick anyone for so long. However, he said it was impressive, and that he would very much like to use my knowledge for actual detective work, I refused immediately, what kind of nonsense could that be?</p>
+
+<center><p><a href="#3">back</a> <a href="#0">start</a> <a href="#5">next</a></p><br></center>
+</div>
+</div>
+ <div class="scrolling">
+        <div class="contentt">
+<a name="5"></a>
+            <p>text goes here</p>
+
+<center><p><a href="#4">back</a> <a href="#0">start</a> <a href="#6">next</a></p><br></center>
+</div>
+</div>
+ <div class="scrolling">
+        <div class="contentt">
+<a name="6"></a>
+            <p><b>June 19th, 1920</b><br>
+This last week was the last time I posted on the paper, the legacy of my detective persona is over, but as if knowing I was about to hand in the last of my work, the strange man from a few years ago came back to haunt me. Once again he began with the nonsense of wanting me to be a detective with him, this time, however, he gave me proof, proof of what he was talking about.<br>
+I've accepted the job, it's not like mother or father could stop me now that they are not here anymore... the pay seems good enough for what it is.</p>
+
+<center><p><a href="#5">back</a> <a href="#0">start</a> <a href="#7">next</a></p><br></center>
+</div>
+</div>
+</div>
+<a name="pet"></a>
+<h1>the pet...</h1>
+<p><img src="http://openneo-uploads.s3.amazonaws.com/outfits/002/189/596/small_preview.png" style="width: 128px;" class="left"><b>Name:</b> <br><b>Color:</b> Grey<br><b>Species:</b> Gelert<br><b>Type:</b> Unconverted<br><b>Adopted in</b> xx/xx/20xx<br><b>Goals:</b><br>
+- Win at least 5 BC Gold Trophies;<br>
+- Win at least 1 Customization Spotlight;</p>
+<img src="http://i.imgur.com/QzLJR6x.png" style="width: 50px;" class="left" title="Robby, his Snowbunny"><img src="http://i.imgur.com/hc7iTzo.png" style="width: 50px;" class="right" title="Joe, his Cooty"><p>- Win at least 1 Pet Spotlight;<br>
+- <strike>Make a petlookup</strike>;<br>
+- <strike>Choose a petpet</strike>.</p>
+<center><img src="http://cur.glitter-graphics.net/pub/3240/3240789c8a8lepro1.gif"></center>
+<h2><b>Customization:</b></h2>
+<img src="http://openneo-uploads.s3.amazonaws.com/outfits/002/189/594/preview.png" style="width: 110px;"><img src="http://openneo-uploads.s3.amazonaws.com/outfits/002/189/592/preview.png" style="width: 110px;"><img src="http://openneo-uploads.s3.amazonaws.com/outfits/002/189/599/preview.png" style="width: 110px;"><img src="http://openneo-uploads.s3.amazonaws.com/outfits/002/189/600/preview.png" style="width: 110px;"><img src="http://openneo-uploads.s3.amazonaws.com/outfits/002/189/596/preview.png" style="width: 110px;"><img src="http://openneo-uploads.s3.amazonaws.com/outfits/002/189/597/preview.png" style="width: 110px;"><center><img src="http://cur.glitter-graphics.net/pub/3240/3240789c8a8lepro1.gif"></center>
+<h2><b>future plans for him</b></h2>
+<p>Just like all my other pets, he will have a personalised petlookup with you can see live <a href="/petlookup.phtml?pet=hexperimentho">here</a>, this project page you are reading at the moment will be his permanent petpage to immortalize my work and his story. I've also made a NeoBoard Style to advertise this project page, which will be used when he's active (so most of the time).</p><br><center><p><i>(drag and drop the images on your address bar to see them)</i></p>
+<img src="http://i.imgur.com/govCior.png" style="width: 280px; border: black 1px solid;"><br><br><img src="http://i.imgur.com/gmld4MD.png" style="width: 280px; border: black 1px solid;"></center><br><p>As for other plans, as I've described at the beginning of this section, I plan on entering him on the Beauty Contest and get at least 5 Gold Trophies, enter the Customization and Pet Spotlight and win at least 1 trophy for each.</p>
+<p>I would also love to make a more concise version of his story and submit it to the Neopian Times, that would take a lot of revision and work, but believe me when I say I'm having so much fun working on it!</p>
+
+<a name="inspo"></a>
+<h1>the inspiration...</h1>
+<p>As any other creative my inspiration comes from many places, but Flusts story begins way before all this. On the 31st of December 2009 I created a pet called <a href="/petlookup.phtml?pet=flustgray">FlustGray</a>, a green Gelert that I later painted blue, why did I create this pet, you may ask? Well, I had fallen in love with the art for the UC Grey Gelerts, but at the time UC trading was not only almost impossible but I also was only 11 years old, so I knew absolutely nothing about trading pets. The funny thing is that one thing hasn't changed in all these years, I had always loved creating characters for my pets, for Flust, it was a depressed and intellectual guy who had a somber past he never talked about, I wanted to start with what I had already layed out as an homage to that pet.</p>
+<p>At the time I made a very bad looking petlookup with the art for the UC grey gelert and a few, now, weird keywords: <b>fine, luxurious, united, silent, shy, winner, real, helper and younger</b>, and even though I have no idea what those meant they did spark an idea inside my head. What time period what be more perfect for a character "hiding" their past than the luxurious 1930s and their noire movies? From my day to day appearance and aesthetics it may not seem like it, but I adore reading about history and the only thing I adore even more than that is fashion history! So much can be learned by how people used to dress and present themselves, and exprêssion through fashion and appearance has always been one of my favorite subjects as a whole.</p>
+<p>I guess now we can begging with the other inspirations for this character! One of my biggest hobbies is gaming, so I can clearly see quite a few characters seeped into his own, the one that comes first to my head is for sure <i>Kyoko Kirigiri</i> from the <i>Danganronpa: Trigger Happy Havoc</i>, a girl who starts the story with amnesia and seems to know quite a bit about doing detective work and solving riddles. Another character that seems to have a bigger baring on the story itself other than on Felix is <i>Curtis Craig</i> from <i>Phantasmagoria 2: A Puzzle of Flesh</i>, one of my favorite retro games, the plot focus on Curtis and his seemingly normal life as inexplicable things start to happen.</p>
+
+<p>However, fiction is not the only thing that has inspired me to create his character. As I've mention, history is one of my favorite subjects, and there's a good reason I chose Terror Mountain and a skiing resort, in the 1930s and 1940s skiing became a huge thing, and you can still find quite a few posters and ads from the time depicting the scenery, the funny contrast of girls in shorts and crop-tops while in the snow having fun really reminded me of Terror Mountain as a whole. The cult aspect of the story is also inspired by real life stories of the <i>Heaven's Gate Cult</i>, which believed that aliens were superior being that should be venerated and the only way to go to heaven was going to space. They did live in a small community retreat but outsiders would not be able to enter.</p>
+
+
+<a name="about"></a>
+<h1>about me...</h1>
+<h2><b>Offline</b></h2>
+<p>My name is Abyss (you can see my portfolio clicking <a href="/~abyss_citadel">here</a>) and my pronouns are they/them, I'm a non-binary mortuary sciences student living in <i>Brazil</i>. I like writing, playing video games, cooking, collecting avatars, creating characters, photography and fashion. My favorite genre of media is horror, I love watching horror movies and playing horror themed games, and I would say my favorites in order are <i>Army of Darkness</i> and <i>Silent Hill 2</i>. In real life I have three cutesy little cats, Samara (10yo), Dothi (2yo) and Valeska (8mo) and a <a href="/userlookup.phtml?user=wglitch">significant other</a> that has been quite a light of hope in my life.</p>
+<center><img src="http://cur.glitter-graphics.net/pub/3240/3240789c8a8lepro1.gif"></center>
+<h2><b>Online</b></h2>
+<p>I've been on neopets since around 2009 and my journey with writing and creating characters began right here on this website! My first few characters were very inspired by (almost carbon copies of) <i>Twilight</i>, which, at the time, was very much my favorite book, but as I aged and was lead to explore other types of media I began to like other things, my writing style and my characters evolved alongside me and their stories were driven to be more dark and mature, which I began exploring off site and this prompted me to stay away from neopets for a few years (around 2012-2015), to not only explore my passion with more violent and real characters but also to hone my writing skilIs.</p>
+<center><img src="http://cur.glitter-graphics.net/pub/3240/3240789c8a8lepro1.gif"></center>
+<h2><b>My Accounts</b></h2>
+<p>After this period away from the website I returned only to find my old account had been terminated, which did sting me a little bit at the time but also made me realize that those characters would live on in my work no matter what, so why not take this new found opportunity to start over and have a fresh beginning? With this mindset I created <a href="/userlookup.phtml?user=sterneflugel">sterneflugel</a> (which you can NM clicking <a href="/neomessages.phtml?type=send&recipient=sterneflugel">here</a>), the junction of two German words I always though had a nice sound to them, <i>sterne being star</i> and <i>flugel being wing</i>.</p>
+<div class="container">
+  <div class="boxx">
+<center><h2><a href="/userlookup.phtml?user=sterneflugel">main</a></h2>
+<p><a href="/petlookup.phtml?pet=Abyss_Citadel"><img src="http://pets.neopets.com/cpn/abyss_citadel/1/1.png" title="Abyss"></a><br><br><a href="/petlookup.phtml?pet=Espirrador"><img src="http://pets.neopets.com/cpn/Espirrador/1/1.png" title="Espy"></a><br><br><a href="/petlookup.phtml?pet=hexperimentho"><img src="http://pets.neopets.com/cpn/hexperimentho/1/1.png" title="Hex"></a><br><br><a href="/petlookup.phtml?pet=neplatny"><img src="http://pets.neopets.com/cpn/neplatny/1/1.png" title="Neplatný"></a><br><br><a href="/petlookup.phtml?pet=_suco_"><img src="http://pets.neopets.com/cpn/_suco_/1/1.png" title="Suco"></a><br><br><a href="/petlookup.phtml?pet=Gretchy"><img src="http://pets.neopets.com/cpn/Gretchy/1/1.png" style="width: 50px; height: 50px;" title="Gretchen"></a></p></center>
+</div>
+<div class="boxx">
+<center><h2><a href="/userlookup.phtml?user=sterneflugel2">side1</a></h2>
+<p><a href="/petlookup.phtml?pet=CAPITALISATION"><img src="http://pets.neopets.com/cpn/CAPITALISATION/1/1.png" title="Talise"></a><br><br><a href="/petlookup.phtml?pet=Etherealilly"><img src="http://pets.neopets.com/cpn/Etherealilly/1/1.png" title="Etherea"></a><br><br><a href="/petlookup.phtml?pet=Sufocar"><img src="http://pets.neopets.com/cpn/Sufocar/1/1.png" title="Cypress"></a><br><br><a href="/petlookup.phtml?pet=_Moon_Beam"><img src="http://pets.neopets.com/cpn/_Moon_Beam/1/1.png" title="Moon"><br><br></a><a href="/petlookup.phtml?pet=Memoriyas"><img src="http://pets.neopets.com/cpn/Memoriyas/1/1.png" style="width: 50px; height: 50px;" title="Memoriyas"></a><br><br><a href="/petlookup.phtml?pet=petnamehere"><img src="http://i.imgur.com/TAZvhc0.png" style="width: 50px; height: 50px;" title="Drika"></a></p></center>
+</div>
+<div class="boxx">
+<center><h2><a href="/userlookup.phtml?user=sterneflugel3">side2</a></h2>
+<p><a href="/petlookup.phtml?pet=anastasia_requeijao"><img src="http://pets.neopets.com/cpn/anastasia_requeijao/1/1.png" title="Anastasia"></a><br><br><a href="/petlookup.phtml?pet=Nepherttite"><img src="http://pets.neopets.com/cpn/Nepherttite/1/1.png" title="Nepherttite"></a><br><br><a href="/petlookup.phtml?pet=Reskitana"><img src="http://pets.neopets.com/cpn/Reskitana/1/1.png" title="Resa"></a><br><br><a href="/petlookup.phtml?pet=CandyMachi"><img src="http://i.imgur.com/mFrUinc.gif" style="width: 50px; height: 50px;" title="Machi"></a><br><br><a href="/petlookup.phtml?pet=Enseadas"><img src="http://pets.neopets.com/cpn/Enseadas/1/1.png" style="width: 50px; height: 50px;" title="Enseadas"></a><br><br><a href="/petlookup.phtml?pet=petnamehere"><img src="http://i.imgur.com/1lNbUzG.png" style="width: 50px; height: 50px;" title="petnamehere"></a></p></center>
+</div>
+<div class="boxx">
+<center><h2><a href="/userlookup.phtml?user=sterneflugel4">side3</a></h2>
+<p><a href="/petlookup.phtml?pet=Abraxith"><img src="http://pets.neopets.com/cpn/Abraxith/1/1.png" title="Abraxith"></a><br><br><a href="/petlookup.phtml?pet=Bjarka_"><img src="http://i.imgur.com/GOpNi8M.png" style="width: 50px;" title="Bjarka"></a><br><br><a href="/petlookup.phtml?pet=Impousa"><img src="http://pets.neopets.com/cpn/Impousa/1/1.png" title="Impousa"></a><br><br><a href="/petlookup.phtml?pet=Laepine"><img src="http://i.imgur.com/GSup1gs.gif" style="width: 50px;" title="Laela"></a><br><br><a href="/petlookup.phtml?pet=starphal"><img src="http://i.imgur.com/t1CXuYR.gif" style="width: 50px;" title="Steffan"></a><br><br><a href="/petlookup.phtml?pet=petnamehere"><img src="http://i.imgur.com/1lNbUzG.png" style="width: 50px; height: 50px;" title="petnamehere"></a></p></center>
+</div>
+<div class="boxx">
+<center><h2><a href="/userlookup.phtml?user=sterneflugel5">side4</a></h2>
+<p><a href="/petlookup.phtml?pet=Mr_Kor"><img src="http://pets.neopets.com/cpn/Mr_Kor/1/1.png" title="Blaxton"></a><br><br><a href="/petlookup.phtml?pet=roginol"><img src="http://i.imgur.com/JzwMZaR.gif" title="Roginol"></a><br><br><a href="/petlookup.phtml?pet=Vlicker"><img src="http://pets.neopets.com/cpn/Vlicker/1/1.png" title="Vlicker"></a><br><br><a href="/petlookup.phtml?pet=Vyvoinu"><img src="http://pets.neopets.com/cpn/Vyvoinu/1/1.png" title="Vyvoinu"></a><br><br><a href="/petlookup.phtml?pet=WeebDesu"><img src="http://pets.neopets.com/cpn/WeebDesu/1/1.png" title="Wendy"></a><br><br><a href="/petlookup.phtml?pet=Desthiel"><img src="http://pets.neopets.com/cpn/Desthiel/1/1.png" style="width: 50px; height: 50px;" title="Desthiel"></a></p></center>
+</div></div>
+<center><img src="http://cur.glitter-graphics.net/pub/3240/3240789c8a8lepro1.gif"></center>
+<h2><b>My Goals</b></h2>
+<p>Right now, my main goals are to develop my characters more and make dedicated petpages for most of them, collecting avatars and overall improve my account. You can find my portfolio <a href="/~abyss_citadel">here</a> and my character directory <a href="/~_suco_">here</a>, you can talk to me about anything you want to <a href="/neomessages.phtml?type=send&recipient=sterneflugel">here</a>.
+        </p>
+
+<a name="why"></a>
+<h1>why...</h1>
+<h2><b>a uc grey gelert...</b></h2>
+<p>Now, your next question may be, why in all these years didn't I just paint a random gelert grey and slapped this story on them? To be completely honest, I don't know, but something about the converted grey gelerts just... didn't click, I never painted the actual <a href="/petlookup.phtml?pet=tharuxi">FlustGray</a> because paint brushes where something very very expensive at the time, and the one and only FFQ I had ever gotten turned my starry Kougra, <a href="/petlookup.phtml?pet=tharuxi">Tharuxi</a> into a Faerie Kougra (a very popular and expensive color at the time), and after losing my account and moving to this one I never again thought of Flust...</p>
+<p>That was the case until I created <a href="/petlookup.phtml?pet=bjarka_">Bjarkas</a> character, after getting her from the pound because of how much I loved her name, I made a character to complement <a href="/petlookup.phtml?pet=abraxith">Abraxiths</a> character, a young witch attending a magic school, Bjarka would be one of the "mean" girls that actually grows to see Abraxiths side of the story, but it didn't feel quite right for Bjarka to not have a companion of some sort, that was when I created <a href="/petlookup.phtml?pet=etoxs">Ethan</a>, who whould be her significant other, at first he was a gelert, and that's when it hit me again, "a grey gelert", why not? I thought at the time, but no matter how much I tried, it simply never worked. Something was always off, no matter how many times I tried to work out his character, so I just left the idea there to rot.</p>
+<p>After starting to clean up my accounts from the pets I ended up not creating characters for and trying to trade them for others that would inspire me I noticed how I had already attained most of my pet goals, be it painting or morphing or zapping, so I had to start thinking of a new goal, and since UC trading was so popular I decided to look at the pets to maybe consider getting one, and so it all started again, I saw the grey gelert and everything came rushing into my head, Flust, how much I wanted him to be a UC grey gelert and his whole character. In that epiphany I began to work on this exact page, it was as if every detail of his story came to me naturally, the aesthetics, the words, the mood, everything, and just like that I knew what I needed to pursue now, I needed a UC Grey Gelert!</p>
+<p>Also after doing a whole run of <a href="/~2020">RE:Creation</a> and completaly finishing <a href="/~roginol">Roginol's</a> page I actually felt like I had a chance of making a good project / character page, which is how all of this began!</p>
+
+<h2><b>me...</b></h2>
+
+<p>Your last question regarding this whole project page is probably why me? Why should I be chosen to have such a rare pet that so many others are seeking in this very moment as well? I'll be very honest while answering this question. There is no real special reason I deserve him, and yet I've devoted hours of my life creating this project and this character only based on my passion for the things I've written. As I've mention in the last section, the idea of having a grey gelert has been on the back of my mind at least for the last 3 to 5 years, and yet I've never been able to work it all out until the moment I began working with this specific UC in mind.</p>
+
+<p>My passion for writing and character creation was and still is what drives me to stay on neopets, this site still has a lot of meaning for me even after so many years have passed. I've meet and lost friends in this 11 years, but I still cherish the many memories that shaped me and my characters as they are today, which is why I hope to continue to develop not only Flust after getting him but all of my characters in general, I don't want my pages to stagnate in time and my characters to be the same forever.</p>
+
+<p>With all of this, and knowing that there are so many other incredibly creative and artistic people in this site that deserve such beautiful pets, I still believe my drive to create and develop incredibly intricate stories and worlds is enough that this pet will be very much cared for and loved until the end of this website as a whole.</p>
+
+<a name="sofar"></a>
+<h1>how I got him...</h1>
+<p>♥ Applied for <a href="/~Noncy">antoniothetonu</a> - was chosen as a finalist;</p>
+<p>♥ Applied for <a href="/~Tradoce">Nulaska</a> - was chosen to adopt them on <b>26/10/2020</b>, thank you so much <a href="/userlookup.phtml?user=applebeans">Apple</a> for chosing me!;</p>
+<center><p><i>(drag and drop the images on your address bar to see them)</i></p><img src="http://i.imgur.com/wyvSZmN.png" style="width: 280px; border: black 1px solid;"></center><br><p>♥ Applied for <a href="/neoboards/topic.phtml?topic=160812124">shiok</a> - was not chosen;</p>
+<p>♥ Traded Jissila (+520k custom) for Ohgs, Ohgs for Sniiko (+1.3m custom), Sniiko for Desthiel <i>(end of chain)</i>;</p>
+<center><img src="http://pets.neopets.com/cpn/jissila/1/1.png"><img src="http://imgur.com/epa9bfk.png"><img src="http://pets.neopets.com/cpn/Ohgs/1/1.png"><img src="http://imgur.com/epa9bfk.png"><img src="http://pets.neopets.com/cpn/Sniiko/1/1.png"><img src="http://imgur.com/epa9bfk.png"><img src="http://pets.neopets.com/cpn/Desthiel/1/1.png"></center><br><p>♥ Traded Cyphorra (+110k custom) for Ncia, and Ncia for Pymk;</p>
+<center><img src="http://pets.neopets.com/cpn/cyphorra/1/1.png"><img src="http://imgur.com/epa9bfk.png"><img src="http://pets.neopets.com/cpn/ncia/1/1.png"><img src="http://imgur.com/epa9bfk.png"><img src="http://pets.neopets.com/cpn/pymk/1/1.png"></center><br><p>♥ Traded Nulaska (300HSD +110k custom) for Bxsi, and Bxsi for Factfulness;</p>
+<center><img src="http://pets.neopets.com/cpn/nulaska/1/1.png"><img src="http://imgur.com/epa9bfk.png"><img src="http://pets.neopets.com/cpn/bxsi/1/1.png"><img src="http://imgur.com/epa9bfk.png"><img src="http://pets.neopets.com/cpn/Factfulness/1/1.png"></center><br><p>♥ Applied for <a href="/~Turoa">Uni5555555_2004</a> - was not chosen;</p>
+<p>♥ Applied for <a href="/neoboards/topic.phtml?topic=160828744">claus334123</a> - was not chosen;</p>
+<p>♥ Applied for <a href="/neoboards/topic.phtml?topic=160843582&next=1">BlueDirtyDog</a> - was not chosen;</p>
+<p>♥ Traded Mylliy for Hosaru (+1.3m custom);</p>
+<center><img src="http://pets.neopets.com/cpn/mylliy/1/1.png"><img src="http://imgur.com/epa9bfk.png"><img src="http://pets.neopets.com/cpn/hosaru/1/1.png"></center><br><p>♥ Applied for <a href="/neoboards/topic.phtml?topic=160855735">Halloween60</a> - was not chosen;</p>
+<p>♥ Applied for <a href="/~neo1460000">neo1460000</a> - was not chosen;</p>
+<p>♥ Applied for <a href="/~Moriqa">blueboy_pound29</a> - was not chosen;</p>
+<br><center><img src="http://cur.glitter-graphics.net/pub/3240/3240789c8a8lepro1.gif"></center>
+<h2><b>Board Application Format</b></h2>
+<center>
+<textarea>Hello, my name is Abyss and I'm interested in applying for (name here).
+My accounts are sterneflugel (main account), sterneflugel2, sterneflugel3, sterneflugel4 and sterneflugel5.
+I want (name here) because I've dreamed of owning a UC Grey Gelert since I was 13 and first saw their old art in 2009. My plan is to get him at least 5 gold BC trophies and giving him a, in-depth character pp. (c)</textarea><textarea>He would be an amnesic detective in an alternate universe set in the 1930s where Terror Mountain is a ski resort, where a few tourists have disappeared and he's the one assigned to solve the case.
+I want to give him a Ghost Snowbunny, which would tie in with his backstory and childhood, having been his pet for many years.
+(name here) will be on my main account where I've planed a few (c)</textarea><textarea>customization he will have to cycle through.
+You can see examples of my characters at /~_suco_ where I keep my character directory, and if you want more info on my plans and character for a UC Grey Gelert you can see my project at /~hexperimentho
+Thank you for your time and good luck to everyone :)</textarea></center>
+<center><img src="http://cur.glitter-graphics.net/pub/3240/3240789c8a8lepro1.gif"></center>
+<h2><b>NeoMail Application Format</b></h2>
+<center>
+<textarea>Hello, my name is Abyss, and I'm interested in applying for (name here). In this application I'll be referring to him as Flust / Felix, which is the character I've made specifically for a UC Grey Gelert I've always dreamt of since 2009.
+
+My accounts are sterneflugel (my main where I'll keep him if I'm chosen), sterneflugel2, sterneflugel3, sterneflugel4 and sterneflugel5.
+
+One of my hobbies on Neopets is creating intricate characters for all my permanent pets (you can see me project for UC Grey Gelert at /~hexperimentho which will be his pet page if I'm chosen), but my main goal right now is to get each of them 5 gold BC trophies, and working on giving them petlookups and petpages. You can see more of my character at /~_suco_ where I keep my character directory linking to my other pages and pets. Roginol is a good example of how I structure my pets and their characters if you want a quick look.</textarea><textarea>He would be an amnesic detective in an alternate universe where Neopia is set in the 1930s and Terror Mountain is just a ski resort, Flust moves there to live peacefully after the accident that made him lose his memory but finds himself amidst a few weird disappearances of tourists, being assigned to the case by the local Sheriff he tries to regain his memories while solving the mystery. His story is inspired by the 2001 site event ''Ski Lodge Mystery'' but with a historical twist.
+
+This is just the basic plot line of his ''current'' story. I would give him a Ghost Snowbunny which would tie in with his backstory and childhood, having been his pet for many years. I also have quite a few customization prepared for him which I will be able to cycle through. As I've mentioned, and just like my other pets, he will be getting a custom petlookup and petpage.
+
+This is all I have to say in this application at the moment. Thank you so much for this opportunity and I hope you may find an excellent owner for your pet.
+
+Regards,
+Abyss.</textarea></center>
+<center><img src="http://cur.glitter-graphics.net/pub/3240/3240789c8a8lepro1.gif"></center>
+<h2><b>Constructive Criticism Boards</b></h2>
+<p><a href="/neoboards/topic.phtml?topic=160761209">1</a> | <a href="/neoboards/topic.phtml?topic=160761202">2</a> | <a href="/neoboards/topic.phtml?topic=160810311">3</a></p>
+
+<a name="conclusion"></a>
+<h1>the conclusion...</h1>
+
+<p>And so we've reached the end of this page, I would like to thank everyone that has given me constructive criticism and that supported me while creating this project. Thank you for taking your time to visit and read this page I truly hope you've enjoyed this journey just as much as I've enjoyed creating all of it!</p>
+
+<p>Don't forget to get an adoptable from the next section if you would like and link back to this page if you've enjoyed it, I would be incredibly grateful! And if you want to be an affiliate, please <a href="/neomessages.phtml?type=send&recipient=sterneflugel">NM me</a>.
+
+<a name="art"></a>
+</p><h1>the gallery...</h1>
+<h2><b>adoptables</b></h2>
+<center><div class="button">
+<b>Requests</b><br><img src="http://i.imgur.com/GdNY5oj.png"></div>
+<div class="button">
+<b>Art Trades</b><br><img src="http://i.imgur.com/GdNY5oj.png"></div><br><br><b>progress:</b><br><img src="http://i.imgur.com/FA93gVw.png" title="26/67"><br><br><div class="button">
+<img src="http://i.imgur.com/QssmjNn.png" style="height: 100px;"><br>base<br></div><br><br><div class="button">
+<img src="http://i.imgur.com/Lnu7eRs.png" style="height: 100px;"><br>baby<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/Lnu7eRs.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/PO0kf6f.png" style="height: 100px;"><br>biscuit<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/PO0kf6f.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/2pd2geW.png" style="height: 100px;"><br>blue<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/2pd2geW.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/Nd4GKMM.png" style="height: 100px;"><br>brown<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/Nd4GKMM.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/0IbCCvo.png" style="height: 100px;"><br>camouflage<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/0IbCCvo.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/xVUIg6P.png" style="height: 100px;"><br>checkered<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/xVUIg6P.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/oAEnQFy.png" style="height: 100px;"><br>cloud<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/oAEnQFy.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/TQvJaTz.png" style="height: 100px;"><br>dimensional<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/TQvJaTz.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/0qDHjz3.png" style="height: 100px;"><br>disco<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/0qDHjz3.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/6CfdIFA.png" style="height: 100px;"><br>electric<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/6CfdIFA.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/R9yU2f8.png" style="height: 100px;"><br>eventide<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/R9yU2f8.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/vF6cMM0.png" style="height: 100px;"><br>fire<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/vF6cMM0.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/YDTRH7I.png" style="height: 100px;"><br>ghost<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/YDTRH7I.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/PVGdVpC.png" style="height: 100px;"><br>glowing<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/PVGdVpC.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/ymYmMcb.png" style="height: 100px;"><br>gold<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/ymYmMcb.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/yaVcZGp.png" style="height: 100px;"><br>green<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/yaVcZGp.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/r5hPGz9.png" style="height: 100px;"><br>grey<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/r5hPGz9.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/p5t9aT4.png" style="height: 100px;"><br>invisible<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/p5t9aT4.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/YNnQghb.png" style="height: 100px;"><br>jelly<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/YNnQghb.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/VkKPkEk.png" style="height: 100px;"><br>orange<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/VkKPkEk.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/QTbtlkR.png" style="height: 100px;"><br>pastel<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/QTbtlkR.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/PpMP6J4.png" style="height: 100px;"><br>pink<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/PpMP6J4.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/NqjpiyI.png" style="height: 100px;"><br>purple<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/NqjpiyI.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/NBBCOz1.png" style="height: 100px;"><br>red<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/NBBCOz1.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/oKdgPYy.png" style="height: 100px;"><br>shadow<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/oKdgPYy.png"></a></textarea></div>
+<div class="button">
+<img src="http://i.imgur.com/YrCygE6.png" style="height: 100px;"><br>yellow<br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/YrCygE6.png"></a></textarea></div>
+
+
+</center>
+<center><img src="http://cur.glitter-graphics.net/pub/3240/3240789c8a8lepro1.gif"></center>
+<h2><b>adopted</b></h2>
+<center><p><i>(drag and drop the images on your address bar to see them)</i></p><a href="/~xox"><img src="http://i.imgur.com/90iwd.png"></a><a href="http://www.neopets.com/~Supiritto"><img src="http://i.imgur.com/aS6PGlz.png" width="32" height="65" border="0"></a><a href="/~Baroness_Freckles"><img src="http://i.imgur.com/6fVMIof.png" style="width: 32px; height: 65px;"></a><a href="/~_KaseyKennethKahne_"><img src="http://i.imgur.com/YiAgCoR.png" border="0" style="width: 32; height: 65;"></a><a href="/~Jyuukun"><img src="http://i.imgur.com/K6YC2ju.png" style="width: 32px; height: 65px;"></a><a href="/~kwni"><img src="http://i.imgur.com/dTW0wtP.png" style="width: 32px; height: 65px;"></a><a href="/~kwni"><img src="http://i.imgur.com/qkE86TC.png" style="width: 32px; height: 65px;"></a><a href="/~kwni"><img src="http://i.imgur.com/qN0MCem.png" style="width: 32px; height: 65px;"></a><a href="http://www.neopets.com/~Unlovely"><img src="http://i.imgur.com/y5Fyt9z.png" style="width: 32px; height: 65px;"></a><a href="/~samitan"><img src="http://fc09.deviantart.net/fs71/f/2014/193/9/e/9e8b83a5035065d1ed61c9db531e6165-d7qbos4.png" style="width: 32px; height: 65px;"></a><a href="/~Geswary"><img src="http://i.imgur.com/7oy4hLo.png" style="width: 32px; height: 65px;"></a><a href="http://www.neopets.com/~Beckham_Hu"><img src="http://i.imgur.com/IagPVF5.gif" width="32" height="65"></a><a href="http://www.neopets.com/~sw4mpert"><img src="http://i.imgur.com/pq1mRb8.png" width="32" height="65"></a>
+</center>
+
+<center><img src="http://cur.glitter-graphics.net/pub/3240/3240789c8a8lepro1.gif"></center>
+<h2><b>by me</b></h2>
+<center><i>(drag and drop the images on your address bar to see them)</i><br><img src="http://i.imgur.com/y6daqTK.png" style="height: 65px;"><img src="http://i.imgur.com/K6Y4IRA.png" style="height: 65px;"><br><br></center>
+<center><img src="http://cur.glitter-graphics.net/pub/3240/3240789c8a8lepro1.gif"></center>
+<h2><b>by others</b></h2>
+<p>Thank you so much for everyone that took their time to make a piece of art for Flust! May your kindness be tripled in the future!<br></p><center><i>(drag and drop the images on your address bar to see them)</i><br><a href="/~Lysandrez"><img src="http://i.imgur.com/QbGQbko.png" style="height: 65px;" title="by shellshocks"></a><a href="/~spam_free_neopet"><img src="http://i.imgur.com/v9s22dA.png" style="height: 65px;" title="by leo_lion2"></a><a href="/~Ophionous"><img src="http://i.imgur.com/i6qwdnY.gif" style="height: 65px;" title="by alli_draggy"></a><a href="/userlookup.phtml?user=_hannah123445_"><img src="http://i.imgur.com/MxAM6KN.png" style="height: 65px;" title="by _hannah123445_"></a></center>
+
+<a name="sitely"></a>
+<h1>sitely</h1>
+<h2><b>link back</b></h2>
+<center><div class="button">
+          <img src="http://i.imgur.com/ILBPOiy.gif"><br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/ILBPOiy.gif"></a></textarea></div>
+<div class="button">
+<a href="/~estarina"><img src="http://i.imgur.com/d74MkUj.gif" border="0" title="by xlorally"></a><br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/d74MkUj.gif" border="0"></a>
+</textarea></div>
+<div class="button">
+<a href="/~Alixsandria"><img src="http://i.ibb.co/b5GsZRm/sterneflugel-abyss.gif" title="by miist"></a><br><textarea><a href="/~hexperimentho"> <img src="http://i.ibb.co/b5GsZRm/sterneflugel-abyss.gif"></a></textarea></div>
+<br><div class="button">
+          <img src="http://i.imgur.com/QMjp3vJ.gif"><br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/QMjp3vJ.gif"></a></textarea></div>
+        <div class="button">
+          <img src="http://i.imgur.com/dQ0cddW.png"><br><textarea><a href="/~hexperimentho"><img src="http://i.imgur.com/dQ0cddW.png"></a></textarea></div>
+        </center>
+<center><img src="http://cur.glitter-graphics.net/pub/3240/3240789c8a8lepro1.gif"></center>
+<h2><b>credits</b></h2>
+<p>
+<a href="/~1945css">layout</a> | <a href="/~Instinctus">background</a> | <a href="/~berengier">headers</a> | <a href="/~Tines">floats</a> | <a href="/~Cecira">codes</a> | <a href="/userlookup.phtml?user=reconnection">chart</a>
+<br><br><b>Moodboard credits:</b> <a>Eric Ruby</a>, <a>Spike Jonze</a>, <a>Sarah LeFeber</a>, <a>Jessica Le</a>, <a>Mark V. Krajnak</a>.<br><br><b>Graphics credits:</b> <a>glitter-graphics</a> | <a>manymooa</a> | <a href="/userlookup.phtml?user=piratetwins_1994">Britt</a> | <a href="/~icnamotserhc">esquire</a> | <a>XxCream-CookiesxX</a> | <a>kicked-in-teeth</a> | <a>zozioxp</a> | <a>Oceannist</a> | <a>Aywas</a> | <a>Sukiie</a></p>
+<p><b>others pages that helped me:</b></p>
+<center><a href="/~alixsandria"><img src="http://i.ibb.co/cxWbg3x/miist-abyss.gif"></a><a href="/~Adopter"><img src="http://i.imgur.com/fC6VNjT.gif" border="0"></a><a href="/~Ktyn"><img src="http://i.imgur.com/Yz3hwME.gif"></a>
+<a href="/~Applicant"><img src="http://i.imgur.com/huJIuaj.gif" border="0"></a><a href="/~Turttle_Kller"><img src="http://i.imgur.com/DhmK9ad.gif" border="0"></a><a href="/~vertay"><img src="http://i.imgur.com/ztWxba6.gif" border="0"></a><a href="/~estarina"><img src="http://i.imgur.com/iIVSjUj.gif" border="0"></a><br><br><a href="/~Kneight"><img src="http://i.imgur.com/lpjpnPt.gif"></a></center>
+<center><img src="http://cur.glitter-graphics.net/pub/3240/3240789c8a8lepro1.gif"></center>
+<p>NEOPETS, CHARACTERS, LOGOS, NAMES AND ALL RELATED INDICIA ARE TRADEMARKS OF <b>NEOPETS, INC., © 1999-present.</b></p>
+<h2><b>listed at:</b></h2>
+<center><a href="/~Moonscope"><img src="http://i.imgur.com/3yh5CAe.gif" border="0"></a><a href="/~respects"><img src="http://i.imgur.com/LRQzkC7.gif" border="0"></a>
+<a href="/~Raaynebow"><img src="http://i.imgur.com/yyCiI7Z.gif" border="0"></a><a href="/~sonhai"><img src="http://i.imgur.com/DXVXmfu.gif"></a><a href="/~Eggso"><img src="http://i.imgur.com/kyDUvn0.gif" border="0"></a><a href="/~Vaowls"><img src="http://i.imgur.com/4Cxi4bp.gif"></a></center><br></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
